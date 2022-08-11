@@ -1,0 +1,21 @@
+Description: >
+  UdaPeople backend stack.
+
+Parameters:
+  ID:
+    Description: Unique identifier.
+    Type: String
+
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t3.micro
+      SecurityGroupIds:
+        - 'sg-097425e58e468af39'
+      SubnetId: 'subnet-02f0fdefd08e4aa7b'
+      KeyName: sample_key_ansible 
+      ImageId: 'ami-08d4ac5b634553e16'
+      Tags:
+        - Key: Name
+          Value: !Sub backend-${ID}
