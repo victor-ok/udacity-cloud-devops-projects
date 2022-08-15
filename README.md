@@ -1,2 +1,2 @@
 # udacity-cloud-devops-projects
-This projects demonstrates my AWS skills in the recently concluded Udacity Cloud DevOps Course
+These projects demonstrate my AWS skills in the recently concluded Udacity Cloud DevOps Nanodegree Program
