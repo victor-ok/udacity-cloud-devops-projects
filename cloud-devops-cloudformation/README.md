@@ -1,1 +1,1 @@
-# udacity-cloud-devops-projects
+# Infrastructure as Code with AWS Cloudformation
