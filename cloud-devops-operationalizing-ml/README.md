@@ -2,8 +2,6 @@
 
 ## Project Overview
 
-In this project, I applied the skills I acquired to operationalize a Machine Learning Microservice API.
-
 The project goal was to operationalize the machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
 * Test the project code using linting
 * Complete a Dockerfile to containerize the application
