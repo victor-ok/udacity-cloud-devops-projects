@@ -4,7 +4,7 @@ This project helped in mastering CI/CD concepts. The detailed description can be
 
 ## Project Submission Items
 ### Presentation
-The following [slides](./presentation.pdf) explain the key benefits of CI/CD for Cloud-based software products.
+The following [slides](https://github.com/mayurwaB/udacity-cloud-devops-projects/blob/main/cloud-devops-ci-cd-udapeople/instructions/presentation.pdf) explain the key benefits of CI/CD for Cloud-based software products.
 
 ### Tools
 - Ansibe - Configuration Management
