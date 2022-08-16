@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-The project goal was to operationalize the machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project I:
+The project goal was to operationalize the machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project the following objectives were carried out:
 * Tested the project code using linting
 * Completed a Dockerfile to containerize the application
 * Deployed the containerized application using Docker and make a prediction
