@@ -13,6 +13,10 @@ The application infrastructure consists of deploying the following stacks:
 1. Network Template - Includes VPC, two pairs of public and private subnets, Internet Gateway, NAT Gateways and Routing Tables for public and private subnets with associations.
 2. Application Server Template - Includes RoleforSSMAccess for secure access to the EC2 instance away from the public network, Load Balancer, web servers and corresponding autoscaling, target and security groups.
 
+### Before running any script
+
+`chmod +x ./script.sh`
+
 ### Create infrastructure
 
 To create the infrastructure stack run the following commands in the same order as below:
