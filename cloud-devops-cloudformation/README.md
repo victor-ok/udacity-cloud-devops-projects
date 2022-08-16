@@ -1,6 +1,5 @@
-## Infrastructure as Code with AWS Cloudformation
+## Infrastructure as Code with AWS Cloudformation - Udagram
 
-# Udagram
 The following document contains instructions on how to deploy a highly available web application using AWS CloudFormation.
 
 ## Architecture Diagram
