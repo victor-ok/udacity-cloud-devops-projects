@@ -10,7 +10,7 @@ The following [slides](https://github.com/mayurwaB/udacity-cloud-devops-projects
 - AWS - Cloud Service
 - Ansible - Configuration Management
 - CircleCI - Continuous Integration / Continuous Deployment
-- Prometheus - Monitoring and Logging
+- Prometheus - Infrastructure Monitoring
 - AlertManager - Alerting
 - CloudFormation - Infrastructure Provisioning
 
