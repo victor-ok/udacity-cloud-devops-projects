@@ -5,7 +5,7 @@ The following document contains instructions on how to deploy a highly available
 
 ## Architecture Diagram
 
-![Diagram](AWS Diagram.svg)
+![Diagram](AWS-Diagram.svg)
 
 ## Infrastructure Deployment
 
