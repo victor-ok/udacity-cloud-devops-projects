@@ -1,6 +1,6 @@
 ## Udapeople Continuous Integration and Continuous Deployment
 
-This project helped in mastering CI/CD concepts. The detailed description can be found in [Introduction](instructions/Instructions.md).
+This project helped in mastering CI/CD concepts. The detailed description can be found in [Introduction](./Instructions.md).
 
 ## Project Submission Items
 ### Presentation
