@@ -1,10 +1,16 @@
 ## Udapeople Continuous Integration and Continuous Deployment
 
-This project should help you to master CI/CD concepts. The detailed description can be found in [Introduction](instructions/Instructions.md).
+This project helped in mastering CI/CD concepts. The detailed description can be found in [Introduction](instructions/Instructions.md).
 
 ## Project Submission Items
 ### Presentation
 The following [slides](./presentation.pdf) explain the key benefits of CI/CD for Cloud-based software products.
+
+### Tools
+- Ansibe - Configuration Management
+- CircleCI - Continuous Integration / Continuous Deployment
+- Prometheus - Monitoring
+- CloudFormation - Infrastructure Provisioning
 
 ### Urls
 - Public Url to GitHub repository [URL01]
