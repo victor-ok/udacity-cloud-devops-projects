@@ -4,14 +4,14 @@
 
 ## Project Overview
 
-The project goal was to operationalize the machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test the project code using linting
-* Complete a Dockerfile to containerize the application
-* Deploy the containerized application using Docker and make a prediction
-* Improve the log statements in the source code for the application
-* Configure Kubernetes and create a Kubernetes cluster
-* Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that the code has been tested
+The project goal was to operationalize the machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project I:
+* Tested the project code using linting
+* Completed a Dockerfile to containerize the application
+* Deployed the containerized application using Docker and make a prediction
+* Improved the log statements in the source code for the application
+* Configured Kubernetes and create a Kubernetes cluster
+* Deployed a container using Kubernetes and make a prediction
+* Uploaded a complete Github repo with CircleCI to indicate that the code has been tested
 
 
 ## Setup the Environment
