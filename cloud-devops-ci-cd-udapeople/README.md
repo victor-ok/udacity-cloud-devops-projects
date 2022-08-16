@@ -8,7 +8,7 @@ The following [slides](https://github.com/mayurwaB/udacity-cloud-devops-projects
 
 ### Tools
 - AWS - Cloud Service
-- Ansibe - Configuration Management
+- Ansible - Configuration Management
 - CircleCI - Continuous Integration / Continuous Deployment
 - Prometheus - Monitoring and Logging
 - AlertManager - Alerting
