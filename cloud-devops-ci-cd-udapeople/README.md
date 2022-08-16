@@ -41,8 +41,8 @@ The following [slides](https://github.com/mayurwaB/udacity-cloud-devops-projects
 8. Promotion of infrastructure succeeded: ![SCREENSHOT08](instructions/screenshots/[SCREENSHOT08].png)
 9. Cleanup old stack succeeded: ![SCREENSHOT09](instructions/screenshots/[SCREENSHOT09].png)
 10. Skip deployment for non-`main` branch: ![SCREENSHOT10](instructions/screenshots/[SCREENSHOT10].png)
-11. Graphs for backend EC2 server that monitor disk I/O, available memory, available disk space, and CPU usage.
+11. Graphs in Prometheus for backend EC2 server that monitor disk I/O, available memory, available disk space, and CPU usage.
     1. Disk I/O ![SCREENSHOT11-1](instructions/screenshots/[SCREENSHOT11-1].png)
     2. CPU Usage ![SCREENSHOT11-2](instructions/screenshots/[SCREENSHOT11-2].png)
     3. Available Memory ![SCREENSHOT11-3](instructions/screenshots/[SCREENSHOT11-3].png)
-12. Prometheus Email Notification: ![SCREENSHOT12](instructions/screenshots/[SCREENSHOT12].png)
+12. Alert Manager Email Notification: ![SCREENSHOT12](instructions/screenshots/[SCREENSHOT12].png)
