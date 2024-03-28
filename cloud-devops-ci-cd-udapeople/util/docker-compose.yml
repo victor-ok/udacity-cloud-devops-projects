@@ -9,3 +9,4 @@ services:
       - POSTGRES_DB=glee
     ports:
       - "5532:5433"
+    
