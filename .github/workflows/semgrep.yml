@@ -33,5 +33,6 @@ jobs:
         env:
           SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
           SEMGREP_REPO_DISPLAY_NAME: monorepo-test--${{ matrix.subdir }}
+          SEMGREP_BASELINE_REF: main
         run: |
           semgrep ci --include=$SEMGREP_REPO_DISPLAY_NAME
