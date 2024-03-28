@@ -26,9 +26,7 @@ jobs:
       image: returntocorp/semgrep
     env:
       SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
-      SEMGREP_REPO_DISPLAY_NAME: monorepo-test--${{ matrix.subdir }}
-      SEMGREP_BASELINE_REF: main
-    if: (github.actor != 'dependabot[bot]')   
+      SEMGREP_REPO_DISPLAY_NAME: monorepo-test--${{ matrix.subdir }} 
     steps:
     - uses: actions/checkout@v4
     - run: semgrep ci --include=${{ matrix.subdir }} 
