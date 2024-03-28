@@ -15,9 +15,10 @@ jobs:
     strategy:
       matrix:
         subdir:
-          - subrepo-1
-          - subrepo-2
-          - subrepo-3
+          - cloud-devops-ci-cd-udapeople
+          - cloud-devops-cloudformation
+          - cloud-devops-operationalizing-ml
+          - cloud-devops-static-website  
     name: semgrep/ci
     runs-on: ubuntu-20.04
     env:
