@@ -1,32 +1,32 @@
-name: Semgrep
+name: Semgrep CI
 on:
-  pull_request_target: {}
-  push:
-    branches:
-    - main
-    - master
-    paths:
-    - .github/workflows/semgrep.yml
-  schedule:
-  # random HH:MM to avoid a load spike on GitHub Actions at 00:00
-  - cron: 55 14 * * *
-
+ pull_request:
+   paths:
+     - '*.js'
+     - '*.jsx'
 jobs:
-  semgrep:
-    strategy:
-      matrix:
-        subdir:
-          - cloud-devops-ci-cd-udapeople/*
-          - cloud-devops-cloudformation/*
-          - cloud-devops-operationalizing-ml/*
-          - cloud-devops-static-website/*  
-    name: semgrep/ci
-    runs-on: ubuntu-latest
-    container:
-      image: returntocorp/semgrep
-    env:
-      SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
-      SEMGREP_REPO_DISPLAY_NAME: monorepo-test--${{ matrix.subdir }} 
-    steps:
-    - uses: actions/checkout@v4
-    - run: semgrep ci --include=${{ matrix.subdir }} 
+ semgrep:
+   runs-on: ubuntu-latest
+   container:
+     image: returntocorp/semgrep:latest
+   steps:
+     - name: Checkout code
+       uses: actions/checkout@v2
+       with:
+         fetch-depth: 0
+     - name: Run Semgrep
+       run: |
+         env
+         semgrep --config p/r2c --baseline-commit HEAD~ --json > findings.json
+     - name: Set up Python environment
+       uses: actions/setup-python@v2
+       with:
+         python-version: '3.x'
+     
+     - name: Install dependencies
+       run: pip install requests
+          
+     - name: Post comments for each finding
+       run: python post_comments.py
+       env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
