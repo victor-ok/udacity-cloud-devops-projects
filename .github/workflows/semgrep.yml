@@ -2,7 +2,7 @@ name: Semgrep
 
 on:
 
-  pull_request: {}
+  pull_request_target: {}
 
   push:
     branches: ["master", "main"]
@@ -34,5 +34,6 @@ jobs:
           SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
           SEMGREP_REPO_DISPLAY_NAME: monorepo-test--${{ matrix.subdir }}
           SEMGREP_BASELINE_REF: main
+        if: (github.actor != 'dependabot[bot]')  
         run: |
           semgrep ci --include=$SEMGREP_REPO_DISPLAY_NAME
