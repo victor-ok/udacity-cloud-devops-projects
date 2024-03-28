@@ -1,9 +1,12 @@
 name: Semgrep CI
 on:
- pull_request:
+ pull_request_target: {}
+ push:
+   branches:
+   - main
+   - master
    paths:
-     - '*.js'
-     - '*.jsx'
+   - .github/workflows/semgrep.yml
 jobs:
  semgrep:
    runs-on: ubuntu-latest
