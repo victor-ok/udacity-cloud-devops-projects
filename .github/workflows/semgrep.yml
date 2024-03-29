@@ -1,10 +1,6 @@
 name: Semgrep
 on:
-<<<<<<< HEAD
   pull_request: {}
-=======
-  pull_request_target: {}
->>>>>>> c2aca8f3f0215adbc07defd9ec435374f772d18b
   push:
     branches:
     - main
@@ -17,16 +13,21 @@ on:
 
 jobs:
   semgrep:
+    strategy:
+      matrix:
+        subdir:
+          - cloud-devops-ci-cd-udapeople/
+          - cloud-devops-cloudformation/
+          - cloud-devops-operationalizing-ml/
+          - cloud-devops-static-website/
     name: semgrep/ci
     runs-on: ubuntu-latest
     container:
       image: returntocorp/semgrep
     env:
-      SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }} 
+      SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
+      SEMGREP_REPO_DISPLAY_NAME: monorepo-test--${{ matrix.subdir }} 
+      SEMGREP_BASELINE_REF: cloudsenseiNG-patch-1
     steps:
     - uses: actions/checkout@v4
-<<<<<<< HEAD
-    - run: semgrep ci
-=======
-    - run: semgrep ci --include=${{ matrix.subdir }} 
->>>>>>> c2aca8f3f0215adbc07defd9ec435374f772d18b
+    - run: SEMGREP_BASELINE_REF=$SEMGREP_BASELINE_REF semgrep ci --include=${{ matrix.subdir }} 
