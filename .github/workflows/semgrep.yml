@@ -1,7 +1,6 @@
 name: Semgrep
 on:
-<<<<<<< HEAD
-  pull_request_target: {}
+  pull_request: {}
   push:
     branches:
     - main
@@ -14,27 +13,12 @@ on:
 
 jobs:
   semgrep:
-    strategy:
-      matrix:
-        subdir:
-          - cloud-devops-ci-cd-udapeople/*
-          - cloud-devops-cloudformation/*
-          - cloud-devops-operationalizing-ml/*
-          - cloud-devops-static-website/*  
     name: semgrep/ci
     runs-on: ubuntu-latest
     container:
       image: returntocorp/semgrep
     env:
-      SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
-      SEMGREP_REPO_DISPLAY_NAME: monorepo-test--${{ matrix.subdir }} 
+      SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }} 
     steps:
     - uses: actions/checkout@v4
-    - run: semgrep ci --include=${{ matrix.subdir }} 
-=======
- pull_request:
-   paths:
-     - '*.js'
-     - '*.jsx'
-jobs:
->>>>>>> f0b26b74ba15ed8cfdd61c0b0eb6038584810c50
+    - run: semgrep ci
