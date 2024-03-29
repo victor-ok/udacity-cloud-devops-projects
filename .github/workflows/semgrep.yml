@@ -29,4 +29,4 @@ jobs:
       SEMGREP_REPO_DISPLAY_NAME: monorepo-test--${{ matrix.subdir }} 
     steps:
     - uses: actions/checkout@v4
-    - run: SEMGREP_BASELINE_REF=$(git merge-base origin/main HEAD) semgrep ci --include=${{ matrix.subdir }} 
+    - run: SEMGREP_BASELINE_REF=main semgrep ci --include=${{ matrix.subdir }} 
