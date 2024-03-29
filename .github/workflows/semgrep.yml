@@ -1,5 +1,6 @@
 name: Semgrep
 on:
+<<<<<<< HEAD
   pull_request_target: {}
   push:
     branches:
@@ -30,3 +31,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: semgrep ci --include=${{ matrix.subdir }} 
+=======
+ pull_request:
+   paths:
+     - '*.js'
+     - '*.jsx'
+jobs:
+>>>>>>> f0b26b74ba15ed8cfdd61c0b0eb6038584810c50
