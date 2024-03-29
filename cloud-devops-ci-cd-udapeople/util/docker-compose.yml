@@ -7,4 +7,4 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=glee
-    ports:
+    ports: 5432
